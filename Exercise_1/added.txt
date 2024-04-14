@@ -1,6 +1,0 @@
-Admin.profile
-Event.object
-Trading_Event__c.object
-Event.object
-Trading_Event__c.object
-Admin.profile
