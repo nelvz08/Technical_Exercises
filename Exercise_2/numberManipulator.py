@@ -28,10 +28,21 @@ choice = input("Enter your choice (1-5): ")
 
 # Perform operation based on user choice:
 if choice == "1":
-    subtractionResult = []
-    for i in range(5):
-        subtractionResult.append(str(numbers[i] - numbers[i+1]))
-    print("Subtraction result: ", ",".join(subtractionResult))
+        
+        subtractionResult = []
+        for i in range(len(numbers)):
+            if i == 0:
+                result = numbers[i]
+            else:
+                result -= numbers[i]
+
+            subtractionResult.append(str(result))
+
+        # Convert the list of subtraction results to a string with commas
+        subtractionOutput = ", ".join(subtractionResult)
+        
+        # Display the result 
+        print("Subtraction result:", subtractionOutput)
 
 elif choice == "2":
     productResult = 1
